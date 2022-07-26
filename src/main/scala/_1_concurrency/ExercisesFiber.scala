@@ -1,5 +1,5 @@
 package com.ilovedatajjia
-package p2ioConcurrency
+package _1_concurrency
 
 import util.Utils._
 import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}

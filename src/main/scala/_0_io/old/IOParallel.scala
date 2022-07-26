@@ -1,15 +1,15 @@
 package com.ilovedatajjia
-package p1io
+package _0_io.old
 
+import util.Utils._
 import cats.Parallel
+import cats.effect.implicits._
 import cats.effect.{IO, IOApp}
 import cats.implicits._
-import cats.effect.implicits._
-import util.Utils._
 
 /**
  * CCL
- *  - implicit Class for having .<my_func>
+ *  - implicit Class for having _.<my_func> (cf [[util.Utils]])
  *  - IO.Par[A] or Parallel[IO].parallel
  *  - parMapN for an auto parallel evaluation of IO
  */

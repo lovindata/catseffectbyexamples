@@ -21,7 +21,8 @@ programming patterns are also part of the library.
 
 # LogBook
 
-- Continue the cleaning and git refactoring
+- Continue on _1_concurrency
+- Think about a better way to render execution results
 
 
 # Main references
