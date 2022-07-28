@@ -21,7 +21,7 @@ programming patterns are also part of the library.
 
 # LogBook
 
-- Continue on _1_concurrency
+- Continue on _1_concurrency _A_Fiber with blocking
 - Think about a better way to render execution results
 
 

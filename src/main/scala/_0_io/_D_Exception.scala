@@ -29,11 +29,11 @@ object _D_Exception extends IOApp.Simple {
 
   // Run(s)
   override def run: IO[Unit] = {
-    // failingIO1.void
-    // failingIO2.void
-    // multiCaseHandling.void
-    // eitherHandling.void
-    // redeemHandlingProcessing.void
+    //failingIO1.void
+    //failingIO2.void
+    //multiCaseHandling.void
+    //eitherHandling.void
+    //redeemHandlingProcessing.void
     redeemIO.void
   }
 

@@ -31,8 +31,8 @@ object _B_Parallel extends IOApp.Simple {
 
   // Run(s)
   override def run: IO[Unit] =
-    // ioSequentialRun.void
-    // ioParallelRun.void
+    //ioSequentialRun.void
+    //ioParallelRun.void
     ioParallelRunEasy.void
 
 }

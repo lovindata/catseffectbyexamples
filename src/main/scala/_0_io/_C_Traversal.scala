@@ -19,9 +19,9 @@ object _C_Traversal extends IOApp.Simple {
 
   // Run(s)
   override def run: IO[Unit] =
-    // ioList1.void
-    // ioList2.void
-    // ioListParallel1.void
+    //ioList1.void
+    //ioList2.void
+    //ioListParallel1.void
     ioListParallel2.void
 
 }
