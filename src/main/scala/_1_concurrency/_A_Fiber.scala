@@ -46,9 +46,6 @@ object _A_Fiber extends IOApp.Simple {
     _ <- IO("Finished computation").debug
   } yield ()
 
-  // Blocking IO
-  //TODO
-
   // Run(s)
   override def run: IO[Unit] =
     //out.void
