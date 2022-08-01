@@ -8,7 +8,7 @@ import cats.effect.{IO, IOApp}
 import cats.implicits._
 
 /**
- *  - Implicit Class for having `IO(_).debug` (cf [[util.Utils]])
+ *  - Implicit Class for having `IO(_).debug` (cf [[util]])
  *  - Extend `IOApp.Simple` for a given `run` function
  */
 object _B_Parallel extends IOApp.Simple {
