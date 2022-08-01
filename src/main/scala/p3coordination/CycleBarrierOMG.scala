@@ -5,7 +5,7 @@ import cats.effect.std.CyclicBarrier
 import cats.effect.{IO, IOApp}
 import cats.implicits._
 import scala.concurrent.duration._
-import util.Utils._
+import util._
 import scala.util.Random
 
 /**

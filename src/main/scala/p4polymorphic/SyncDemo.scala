@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package p4polymorphic
 
-import util.Utils._
+import util._
 
 import cats.effect.{IO, IOApp, Sync}
 

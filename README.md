@@ -21,8 +21,7 @@ programming patterns are also part of the library.
 
 # LogBook
 
-- Add timeout on _B_Race
-- Continue on _1_concurrency _?_Blocking
+- Continue on Resource & Bracket pattern
 - Think about a better way to render execution results
 
 

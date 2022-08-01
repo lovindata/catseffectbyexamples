@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package _0_io
 
-import util.Utils._
+import util._
 import cats.Traverse
 import cats.effect.{IO, IOApp}
 import cats.implicits._

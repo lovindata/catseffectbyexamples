@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package _1_concurrency.old
 
-import util.Utils._
+import util._
 import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}
 import cats.effect.{IO, IOApp, Outcome}
 import scala.concurrent.duration._

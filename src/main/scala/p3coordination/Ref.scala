@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package p3coordination
 
-import util.Utils._
+import util._
 
 import cats.effect.{IO, IOApp, Ref}
 import cats.implicits._

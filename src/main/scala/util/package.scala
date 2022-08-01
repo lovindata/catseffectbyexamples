@@ -1,9 +1,8 @@
 package com.ilovedatajjia
-package util
 
 import cats.effect.IO
 
-object Utils {
+package object util {
 
   // Implicit class to have extension methods on a given class
   implicit class DebugWrapper[A](io: IO[A]) {

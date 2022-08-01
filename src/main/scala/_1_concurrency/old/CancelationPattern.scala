@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package _1_concurrency.old
 
-import util.Utils.DebugWrapper
+import util._
 
 import cats.effect.{IO, IOApp}
 

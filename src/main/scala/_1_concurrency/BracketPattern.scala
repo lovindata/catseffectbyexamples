@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package _1_concurrency
 
-import util.Utils._
+import util._
 
 import cats.effect.{IO, IOApp}
 

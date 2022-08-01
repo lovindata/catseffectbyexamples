@@ -4,7 +4,7 @@ package p3coordination
 import cats.effect.{Deferred, IO, IOApp, Ref}
 
 import scala.concurrent.duration._
-import util.Utils.DebugWrapper
+import util._
 
 import cats.implicits._
 

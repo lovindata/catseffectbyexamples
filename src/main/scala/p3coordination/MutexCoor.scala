@@ -3,7 +3,7 @@ package p3coordination
 
 import cats.effect.{Deferred, IO, IOApp, Ref}
 import cats.implicits._
-import util.Utils._
+import util._
 import scala.concurrent.duration._
 import scala.collection.immutable.Queue
 import scala.util.Random

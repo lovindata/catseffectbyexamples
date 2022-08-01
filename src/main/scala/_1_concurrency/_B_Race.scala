@@ -1,7 +1,7 @@
 package com.ilovedatajjia
 package _1_concurrency
 
-import util.Utils._
+import util._
 import cats.effect.{IO, IOApp}
 import scala.concurrent.duration.DurationInt
 
@@ -25,9 +25,14 @@ object _B_Race extends IOApp.Simple {
     _ <- IO("Finished complex race").debug
   } yield ()
 
+  // Timeout pattern
+  //val ioTimedOut: IO[String] = ioSimpleRace1.timeout(500.millis) // <- Will timeout
+  val ioTimedOut: IO[String] = ioSimpleRace1.timeout(1500.millis) // <- Will not
+
   // Run(s)
   override def run: IO[Unit] =
     //simpleRaceEither.void
-    complexRaceFiber
+    //complexRaceFiber
+    ioTimedOut.void
 
 }
