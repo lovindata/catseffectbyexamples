@@ -2,9 +2,9 @@ package com.ilovedatajjia
 package _1_concurrency
 
 import util._
-import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}
 import cats.effect.{IO, IOApp, Poll}
-import scala.concurrent.duration.DurationInt
+import cats.effect.Outcome.{Canceled, Errored, Succeeded}
+import scala.concurrent.duration._
 
 object _A_Fiber extends IOApp.Simple {
 
