@@ -1,5 +1,5 @@
 package com.ilovedatajjia
-package p3coordination
+package _2_coordination
 
 import cats.effect.{Deferred, IO, IOApp, Ref}
 import cats.implicits._

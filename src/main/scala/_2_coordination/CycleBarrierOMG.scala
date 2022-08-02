@@ -1,5 +1,5 @@
 package com.ilovedatajjia
-package p3coordination
+package _2_coordination
 
 import cats.effect.std.CyclicBarrier
 import cats.effect.{IO, IOApp}
