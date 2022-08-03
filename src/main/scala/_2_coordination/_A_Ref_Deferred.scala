@@ -27,7 +27,7 @@ object _A_Ref_Deferred extends IOApp.Simple {
     _ <- IO(s"res6 == $res6").debug
   } yield ()
 
-  // Deferred demo (== block & go signal between thread)
+  // Deferred demo (== Wait & Receive value + signal between threads)
   def iWaitYourSignal(deferred: Deferred[IO, Long]): IO[Unit] = for {
     _ <- IO(s"[${java.time.LocalDateTime.now().toLocalTime}] [iWaitYourSignal] " +
       s"Starting to wait your signal & value").debug
