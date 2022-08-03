@@ -21,7 +21,8 @@ programming patterns are also part of the library.
 
 # LogBook
 
-- Continue on Resource & Bracket pattern
+- Don't forget to add debug with Time
+- Continue on CountDownLatches & CycleBarrier
 - Think about a better way to render execution results => `catseffect3byexamples.github.io`
   - Exploration todo on GitHub pages
   - Markdown to GitHub page (with auto nicer visual)
