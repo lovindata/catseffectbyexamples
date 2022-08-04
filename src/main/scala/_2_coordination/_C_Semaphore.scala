@@ -6,24 +6,21 @@ import cats.effect.std.Semaphore
 import cats.effect.{IO, IOApp}
 import scala.concurrent.duration.DurationInt
 
-object _B_Semaphore extends IOApp.Simple {
+object _C_Semaphore extends IOApp.Simple {
 
   // Semaphore (== Resources needed for continuing an execution)
   val aSemaphore3: IO[Semaphore[IO]] = Semaphore[IO](3)
   def computeWithSemaphore(nbSemaNeeded: Int, sema: Semaphore[IO]): IO[Unit] = for {
     // Wait for resources
-    _ <- IO(s"[${java.time.LocalDateTime.now().toLocalTime}] " +
-      s"Try to get $nbSemaNeeded resource(s)").debug
+    _ <- IO(s"Try to get $nbSemaNeeded resource(s)").debug
     _ <- sema.acquireN(nbSemaNeeded)
 
     // Start computation
-    _ <- IO(s"[${java.time.LocalDateTime.now().toLocalTime}] " +
-      s"Successfully got $nbSemaNeeded resource(s) AND Start computation").debug
+    _ <- IO(s"Successfully got $nbSemaNeeded resource(s) AND Start computation").debug
     _ <- IO.sleep(3.seconds) >> sema.releaseN(nbSemaNeeded)
 
     // Release resources
-    _ <- IO(s"[${java.time.LocalDateTime.now().toLocalTime}] " +
-      s"Finished computation AND Successfully released $nbSemaNeeded resource(s)").debug
+    _ <- IO(s"Finished computation AND Successfully released $nbSemaNeeded resource(s)").debug
   } yield ()
   val demoSemaphore: IO[Unit] = for {
     sema <- aSemaphore3

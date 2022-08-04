@@ -11,7 +11,7 @@ package object util {
     def debug: IO[A] = for {
       ioEval <- io
       threadName = Thread.currentThread().getName
-      _ = println(s"[$threadName] $ioEval")
+      _ = println(s"[${java.time.LocalDateTime.now().toLocalTime}] [$threadName] $ioEval")
     } yield ioEval
 
   }
