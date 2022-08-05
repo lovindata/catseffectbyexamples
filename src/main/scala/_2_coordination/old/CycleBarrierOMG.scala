@@ -1,5 +1,5 @@
 package com.ilovedatajjia
-package _2_coordination
+package _2_coordination.old
 
 import cats.effect.std.CyclicBarrier
 import cats.effect.{IO, IOApp}

@@ -7,7 +7,8 @@ import scala.concurrent.duration.DurationInt
 
 object _B_Deferred extends IOApp.Simple {
 
-  // Deferred demo (== Wait & Receive value + signal between threads)
+
+  // Define the signal receiver & sender
   def iWaitYourSignal(deferred: Deferred[IO, Long]): IO[Unit] = for {
     _ <- IO(s"[iWaitYourSignal] Starting to wait your signal & value").debug
     x <- deferred.get
@@ -18,6 +19,8 @@ object _B_Deferred extends IOApp.Simple {
     _ <- IO.sleep(3.seconds) >> deferred.complete(0L)
     _ <- IO(s"[iWillSignalYou] Signal send along with the value 0").debug
   } yield ()
+
+  // Deferred demo (== Wait & Receive value + signal between threads)
   val ioDeferredDemo: IO[Unit] = for {
     deferred <- IO.deferred[Long]
     fibIWaitYourSignal <- iWaitYourSignal(deferred).start

@@ -18,7 +18,7 @@ object _A_Introduction extends App {
     io2Str <- io2
   } yield io1Str + io2Str
 
-  // Some functions
+  // Some functions for IO manipulation
   val ioToApplyFunc: IO[Boolean] = IO(false)
   ioToApplyFunc.map(!_)
   ioToApplyFunc.flatMap(_ => IO(true))
@@ -29,6 +29,6 @@ object _A_Introduction extends App {
 
   // Running IO
   val ioToRun: IO[Int] = IO(0)
-  val resAfterRun = ioToRun.unsafeRunSync()
+  val resAfterRun: Int = ioToRun.unsafeRunSync() // Retrieve the value on the main thread
 
 }

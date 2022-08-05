@@ -5,13 +5,15 @@ import util._
 import cats.effect.{IO, IOApp}
 import scala.concurrent.duration.DurationInt
 
-object _B_Race extends IOApp.Simple {
+object _C_Race extends IOApp.Simple {
 
-  // Simple race
+  // Define some IOs
   val ioSimpleRace1: IO[String] = IO.sleep(1.second) >> IO("Finished ioSimpleRace1").debug
   val ioSimpleRace2: IO[Int] = IO.sleep(2.second) >>
     IO("Finished ioSimpleRace2").debug >>
     IO(5) // <- Will be canceled because slower
+
+  // Simple race
   val simpleRaceEither: IO[Either[String, Int]] = IO.race(ioSimpleRace1, ioSimpleRace2).debug
 
   // Race with Outcome & Fiber handling

@@ -5,7 +5,7 @@ import util._
 import cats.effect.{IO, IOApp, Resource}
 import scala.io.{BufferedSource, Source}
 
-object _C_Resource extends IOApp.Simple {
+object _D_Resource extends IOApp.Simple {
 
   // Bracket pattern
   val pathFile: String = "src/main/scala/_1_concurrency/_C_Resource.scala"
