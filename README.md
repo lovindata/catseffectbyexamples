@@ -1,4 +1,4 @@
-# CatsEffect3ByExamples - Asynchronous runtime in functional style programming
+# CatsEffect3ByExamples - Asynchronous runtime in functional programming style
 
 [![Generic badge](https://img.shields.io/badge/Scala-2.12.16-darkred.svg?style=plastic)](https://www.scala-lang.org/)
 [![Generic badge](https://img.shields.io/badge/CatsEffect3-3.3.14-red.svg?style=plastic)](https://typelevel.org/cats-effect/)

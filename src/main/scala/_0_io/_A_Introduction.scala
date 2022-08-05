@@ -18,14 +18,14 @@ object _A_Introduction extends App {
     io2Str <- io2
   } yield io1Str + io2Str
 
-  // Some functions for IO manipulation
+  // Some functions for IO manipulation(s)
   val ioToApplyFunc: IO[Boolean] = IO(false)
   ioToApplyFunc.map(!_)
   ioToApplyFunc.flatMap(_ => IO(true))
   ioToApplyFunc.as(true)
   ioToApplyFunc.void // Gives an IO[Unit]
   ioToApplyFunc.map(println).foreverM // An IO running forever
-  (ioToApplyFunc, ioToApplyFunc.map(!_)).mapN(_ || _)
+  (ioToApplyFunc, ioToApplyFunc.map(!_)).mapN(_ || _) // Combining IO from Tuple
 
   // Running IO
   val ioToRun: IO[Int] = IO(0)
