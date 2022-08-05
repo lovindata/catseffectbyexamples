@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.12.16"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "cats-effect-learning",
+    name := "catseffect3byexamples",
     idePackagePrefix := Some("com.ilovedatajjia")
   )
 
