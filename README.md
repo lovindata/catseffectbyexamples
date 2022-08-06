@@ -16,12 +16,23 @@ for an automatic resources releasing after usage.
 programming patterns are also part of the library.
 
 
-# LogBook
+# Table of contents
 
-- Think about a better way to render execution results => `catseffectbyexamples.github.io`
-  - Exploration todo on GitHub pages
-  - Markdown to GitHub page (with auto nicer visual)
-  - _.scala to code fences inside markdown
+| 🔎 Subject       | 📃 Description                                                                                                       | 👾 Code snippets                                                         |
+|------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **IOs**          | *This part focuses on understanding `IOs` as data structures holding a manageable execution result.*                 | [Introduction](src/main/scala/_0_io/_A_Introduction.scala)               |
+|                  |                                                                                                                      | [Parallel](src/main/scala/_0_io/_B_Parallel.scala)                       |
+|                  |                                                                                                                      | [Traversal](src/main/scala/_0_io/_C_Traversal.scala)                     |
+|                  |                                                                                                                      | [Exception](src/main/scala/_0_io/_D_Exception.scala)                     |
+| **Concurrency**  | *This part focuses on understanding `Fibers` as threads starting & joining concurrently execution results in `IOs`.* | [Fiber](src/main/scala/_1_concurrency/_A_Fiber.scala)                    |
+|                  |                                                                                                                      | [Uncancelable](src/main/scala/_1_concurrency/_B_Uncancelable.scala)      |
+|                  |                                                                                                                      | [Race](src/main/scala/_1_concurrency/_C_Race.scala)                      |
+|                  |                                                                                                                      | [Resource](src/main/scala/_1_concurrency/_D_Resource.scala)              |
+| **Coordination** | *This part focuses on understanding well-known communication patterns between `Fibers`.*                             | [Ref](src/main/scala/_2_coordination/_A_Ref.scala)                       |
+|                  |                                                                                                                      | [Deferred](src/main/scala/_2_coordination/_B_Deferred.scala)             |
+|                  |                                                                                                                      | [Semaphore](src/main/scala/_2_coordination/_C_Semaphore.scala)           |
+|                  |                                                                                                                      | [CountDownLatch](src/main/scala/_2_coordination/_D_CountDownLatch.scala) |
+|                  |                                                                                                                      | [CyclicBarrier](src/main/scala/_2_coordination/_E_CyclicBarrier.scala)   |
 
 
 # Main references
