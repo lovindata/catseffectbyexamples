@@ -1,4 +1,4 @@
-# CatsEffectByExamples - Asynchronous runtime in functional programming style
+# CatsEffectByExamples - Asynchronous runtime in functional programming style 😎
 
 [![Generic badge](https://img.shields.io/badge/Scala-2.12.16-darkred.svg?style=plastic)](https://www.scala-lang.org/)
 [![Generic badge](https://img.shields.io/badge/CatsEffect3-3.3.14-red.svg?style=plastic)](https://typelevel.org/cats-effect/)
@@ -7,7 +7,7 @@
 
 ![img.png](docs/front-img.jpg)
 
-🤓📚 The objective is to do an easy-to-access codes snippets collections of important Cats Effect concepts.
+👾📚 The objective is to do an easy-to-access codes snippets collections of important Cats Effect concepts.
 Cats Effect possesses [IO](https://typelevel.org/cats-effect/api/3.x/cats/effect/IO.html)
 for wrapping & chaining asynchronous codes executions.
 It has also the concept of [Resource](https://typelevel.org/cats-effect/api/3.x/cats/effect/kernel/Resource.html)
@@ -16,7 +16,12 @@ for an automatic resources releasing after usage.
 programming patterns are also part of the library.
 
 
-# Table of contents
+# Table of contents 📃
+
+🔎📚 For a better understanding of each subject please take the time to run the code snippets.
+They all compile & are runnable ✅. So do not hesitate to fork this git repository 😊.
+
+<ins>Remark</ins>: Some code snippets have multiple possible runs.
 
 | 🔎 Subject       | 📃 Description                                                                                                       | 👾 Code snippets                                                         |
 |------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -35,7 +40,7 @@ programming patterns are also part of the library.
 |                  |                                                                                                                      | [CyclicBarrier](src/main/scala/_2_coordination/_E_CyclicBarrier.scala)   |
 
 
-# Main references
+# Main references 📚
 
 - [Official docs](https://typelevel.org/cats-effect/docs/getting-started)
 - [ScalaDoc](https://typelevel.org/cats-effect/api/3.x/index.html)
