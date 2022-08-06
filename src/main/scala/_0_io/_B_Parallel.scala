@@ -27,9 +27,28 @@ object _B_Parallel extends IOApp.Simple {
   val ioParallelRunEasy: IO[String] = (io1, io2).parMapN(_ + _).as("On different thread").debug
 
   // Run(s)
-  override def run: IO[Unit] =
+  override def run: IO[Unit] = {
     //ioSequentialRun.void
+    /*
+    [07:57:32.901330200] [io-compute-2] First IO to run
+    [07:57:32.906330300] [io-compute-2] Second IO to run
+    [07:57:32.906330300] [io-compute-2] On same thread
+     */
+
     //ioParallelRun.void
+    /*
+    [07:56:58.775126300] [io-compute-3] Second IO to run
+    [07:56:58.775126300] [io-compute-9] First IO to run
+    [07:56:58.791126600] [io-compute-5] On different thread
+     */
+
     ioParallelRunEasy.void
+    /*
+    [07:56:04.520127] [io-compute-3] First IO to run
+    [07:56:04.520127] [io-compute-9] Second IO to run
+    [07:56:04.534127100] [io-compute-3] On different thread
+     */
+
+  }
 
 }
