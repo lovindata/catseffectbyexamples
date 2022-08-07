@@ -20,7 +20,7 @@ programming patterns are also part of the library.
 
 🔎📚 For a better understanding of each subject please take the time to run the code snippets.
 They all compile & are runnable ✅.
-So do not hesitate to fork this git repository and execute them on your on computer 😍.
+So do not hesitate to fork this git repository and execute them on your own computer 😍.
 
 <ins>Remark</ins>: Some code snippets have multiple possible runs.
 
